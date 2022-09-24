@@ -64,7 +64,7 @@ def get_weather(region):
 def get_birthday(birthday, year, today):
     birthday_year = birthday.split("-")[0]
     # 判断是否为农历生日
-    if birthday_year[0] == "r":
+    if birthday_year[0] != "r":
         r_mouth = int(birthday.split("-")[1])
         r_day = int(birthday.split("-")[2])
         # 获取农历生日的今年对应的月和日
